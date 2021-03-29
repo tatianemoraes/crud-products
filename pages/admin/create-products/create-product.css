@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap');
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box; /*deixa o conteudo em uma caixa */
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.div-form {
+  margin-top: 72px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  border: #eb7ea1 1px solid;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f50d57;
+  margin-top: 20px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+label {
+  position: absolute;
+  display: flex;
+  width: 140px;
+  text-align: start;
+  margin-left: -80px;
+  color: #000;
+}
+
+input {
+  /* outline: none;  tira o efeito quando clica em algum campo */
+  outline: #eb7ea1;
+  border-radius: 4px;
+  border: #eb7ea1 1px solid;
+  margin-left: 10px;
+}
+
+.div-input {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.style-input {
+  height: 30px;
+  padding-left: 5px;
+}
+
+#input-name {
+  width: 200px;
+}
+
+#input-model {
+  width: 50px;
+}
+
+#input-quantity {
+  width: 50px;
+  padding-left: 5px;
+}
+
+#input-price {
+  width: 100px;
+}
+
+.buttons {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0; /* jogar tudo para direita, para funcionar é necessario usar position fixed ou absolut */
+  margin-right: 100px;
+  margin-top: 190px;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 38px;
+  width: 139px;
+  border-radius: 4px;
+  outline: none;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 6px;
+}
+
+.btn:active {
+  outline: none;
+}
+
+.btn-save {
+  background: #f50d57;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  background: #fff;
+  border: #f50d57 1px solid;
+  color: #f50d57;
+  font: bold;
+  cursor: pointer;
+}
+
+.btn-cancel:active {
+  background: #ff0051;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-cancel:hover {
+  background: #f50d57;
+  color: #fff;
+  font: bold;
+}
+
+@media (max-width: 800px) {
+  .form {
+    margin: 0;
+  }
+
+  .buttons {
+    flex-direction: column;
+    position: static;
+    margin: 0;
+  }
+
+  .btn {
+    width: 190px;
+    margin-right: 2px;
+  }
+}

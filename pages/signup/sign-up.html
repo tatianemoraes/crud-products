@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js" integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw==" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="sign-up.css">
+</head>
+<body>
+  <main class="main">
+    <div class="left">
+      <h1>Create Account</h1>
+      <div class="content">
+        <form action="">
+          <div class="form">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Name" class="input name" required>
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Email" class="input email" required>
+            <i class="fas fa-unlock"></i>
+            <input type="password" placeholder="Password" class="input password" required>
+          </div>
+          <div>
+            <input type="checkbox" name="agree" id="checkbox">
+            <p>I agree to the <a href="../terms/term.html" target="_blank">Terms</a> and <a href="../terms/privacy-policy.html" target="_blank">Privacy Policy</a></p>
+          </div>
+          <div class="buttons">
+            <a class="btn-sign-up btn" type="submit" href="#">Sign Up</a>
+            <a class="btn-sign-in btn" href="../signin/sign-in.html">Sign In</a>
+            <br>
+            <div class="loading" style="display: none;">
+              <img class="gif-loading" src="/assets/loading.gif"
+              alt="loading">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="right">
+      <img src="../../assets/undraw_file_analysis_8k9b.svg" alt="Content">
+    </div>
+  </main>
+  <script src="../../global.js"></script>
+  <script src="sign-up.js"></script>
+</body>
+</html>

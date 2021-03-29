@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control Painel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js" integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw==" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+  <nav>
+      <div class="user-logged">
+        <i class="fas fa-user"></i>
+        <h1>Hi, user!</h1>
+        <a href="">
+          <i class="fas fa-sign-out-alt"></i>
+        </a>
+      </div>
+  </nav>
+
+  <main>
+    <h5>Products</h5>
+    <hr>
+    <a href="../create-products/create-product.html">
+      <i class="fas fa-plus-circle"></i>
+    </a>
+    <table class="table-products">
+
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Model</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody class="tbody-products">
+        <!--
+          ESSE E UM MODELO DO QUE SERA RENDERIZADO DINAMICAMENTE
+          <tr
+          <td>Nike Shoes</td>
+          <td>40</td>
+          <td>2</td>
+          <td>200.00</td>
+          <td>
+            <a class="a-link" href="">
+              <i class="fas fa-eye type-icon"></i>
+            </a>
+            <a class="a-link" href="">
+              <i class="fas fa-pen-square type-icon"></i>
+            </a>
+            <a class="a-link" href="">
+              <i class="fas fa-trash type-icon"></i>
+            </a>
+          </td>
+        </tr> -->
+      </tbody>
+
+    </table>
+  </main>
+  <script src="../products-global.js"></script>
+  <script src="./admin.js"></script>
+  <script src="./Utils/deleteSelected.js"></script>
+  <script src="./Utils/editSelected.js"></script>
+</body>
+</html>

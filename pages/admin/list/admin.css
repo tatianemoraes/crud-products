@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap');
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box; /*deixa o conteudo em uma caixa */
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.user-logged {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  padding-right: 5px;
+  justify-content: flex-end;
+  color: #f50d57;
+}
+
+.fa-user {
+  margin-right: 8px;
+  width: 20px !important;
+  height: 20px;
+  color: #f50d57;
+}
+
+h1 {
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.fa-sign-out-alt {
+  margin-right: 10px;
+  width: 20px !important;
+  height: 20px;
+  color: #f50d57;
+}
+
+h5 {
+  font-size: 40px;
+  color: #f50d57;
+  padding-left: 20px;
+}
+
+hr {
+  /* linha de efeito embaixo do h5 */
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+  margin-bottom: 20px;
+  border-color: #f50d57;
+}
+
+.fa-plus-circle {
+  cursor: pointer;
+  color: black;
+  height: 30px;
+  width: 30px !important;
+  right: 0;
+  bottom: 10px;
+  margin-right: 50px;
+  color: #f50d57;
+  position: absolute;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  background: #f50d57;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+th {
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+td {
+  padding: 15px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  border-bottom: solid 0.2px rgb(255, 255, 255);
+}
+
+.a-link {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.type-icon {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 830px) {
+  th {
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 13px;
+    color: #fff;
+    border-bottom: solid 0.2px rgb(255, 255, 255);
+  }
+}

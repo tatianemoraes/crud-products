@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js" integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw==" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="sign-in.css">
+</head>
+  <body>
+    <main class="main">
+      <div class="left">
+        <h1>Login Account</h1>
+        <div class="content">
+          <form action="">
+            <div class="form">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" class="input email" required>
+              <i class="fas fa-unlock"></i>
+              <input type="password" placeholder="Password" class="input password" required>
+            </div>
+            <div class="buttons">
+              <a href="../../pages/signup/sign-up.html" class="btn-sign-up btn" type="submit">Sign Up</a>
+              <a href="#" class="btn-sign-in btn">Sign In</a>
+              <br>
+              <div class="loading" style="display: none;"> <!--display none nao aparece a img, esta invisivel --->
+                <img class="gif-loading" src="../../assets/loading.gif"
+                alt="Loading" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="../../global.js"></script>
+    <script src="sign-in.js"></script>
+  </body>
+</html>

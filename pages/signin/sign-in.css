@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap');
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box; /*deixa o conteudo em uma caixa */
+  font-family: 'Nunito Sans', sans-serif;
+  overflow: hidden; /* tirar scroll*/
+}
+
+body {
+  background: #f7f8f9;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  background: #fff;
+  border-radius: 5px;
+  position: static; /* fixa no meio */
+  height: 100%;
+  max-height: 500px;
+  width: 100%;
+  max-width: 400px;
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  color: #f50d57;
+  font-weight: bolder;
+  text-align: center;
+  position: static;
+  margin-bottom: 15px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.input {
+  border: 2px solid #d2e1e5;
+  border-radius: 8px;
+  height: 50px;
+  width: 292px;
+  background: #f7f8f9; /*cor de dentro do input*/
+  margin-left: 30px;
+  outline: none;
+  margin-bottom: 12px;
+  padding-left: 13px;
+  color: #48585d;
+}
+
+.input::placeholder {
+  color: #d2e1e5;
+}
+
+.fa-envelope {
+  margin-top: -68px;
+  position: absolute;
+}
+
+.fa-unlock {
+  margin-top: 50px;
+  position: absolute;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 12px;
+  margin-left: 30px;
+}
+
+.btn {
+  height: 38px;
+  width: 139px;
+  border-radius: 4px;
+  outline: none; /* tira o efeito de borda quando o botao foi clicado */
+  text-decoration: none; /* tira a linha do link da tag a  */
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 6px;
+}
+
+.btn:active {
+  outline: none;
+}
+
+.btn-sign-in {
+  background: #f50d57;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-sign-up {
+  background: #fff;
+  border: #f50d57 1px solid;
+  color: #f50d57;
+  font-weight: bold;
+}
+
+.btn-sign-in:active {
+  background: #ff0051;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-sign-up:hover {
+  background: #f50d57;
+  color: #fff;
+  font-weight: bold;
+}
+
+.gif-loading {
+  height: 150px;
+  width: 150px;
+}
+
+.loading {
+  position: fixed; /* ignora todos os atributos de estilos anteriores e vai comecar a respeitar apenas o que eu passar agr */
+  margin-top: 100px;
+  margin-left: -6px;
+}
+
+@media (max-width: 830px) {
+  body {
+    padding: 0;
+    background: none;
+  }
+
+  .main {
+    height: 1920px;
+    width: 100%;
+  }
+
+  .left {
+    min-width: 320px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+  }
+
+  .input {
+    height: 50px;
+    width: 220px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .btn {
+    margin-bottom: 10px;
+  }
+
+  .loading {
+    position: fixed;
+    margin-top: 148px;
+    margin-left: 0px;
+  }
+}

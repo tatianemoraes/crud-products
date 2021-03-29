@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Product</title>
+  <link rel="stylesheet" href="create-product.css">
+</head>
+<body>
+<div class="div-form">
+  <form class="form"> <!-- action estava forcando o recarregamento da pagina  -->
+    <h1>Create Product</h1>
+    <div class="inputs">
+      <div class="input-name div-input">
+        <label for="">Name</label>
+        <input type="text" class="style-input" placeholder="" name="Name" id="input-name">
+      </div>
+      <div class="input-model div-input">
+        <label for="">Model</label>
+        <input type="text" class="style-input" placeholder="" name="Model" id="input-model">
+      </div>
+      <div class="input-quantity div-input">
+        <label for="">Quantity</label>
+        <input type="number" class="style-input" placeholder="" name="Quantity" id="input-quantity" min="1"> <!-- min é a qtd minima paa ser setada-->
+      </div>
+      <div class="input-price div-input">
+        <label for="">Price</label>
+        <input type="text" class="style-input" placeholder="" name="Price" id="input-price">
+      </div>
+    </div>
+    <div class="buttons">
+      <button type="submit" class="btn btn-save">Save</button> <!--quando cria formulario e coloca button e n define tipo, por padrao ele vem type reset ou sumit-->
+      <a href="../list/admin.html" class="btn btn-cancel">Cancel</a>
+    </div>
+  </form>
+</div>
+<script src="../products-global.js"></script>
+<script src="create-product.js"></script>
+</body>
+</html>
